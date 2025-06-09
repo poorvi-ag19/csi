@@ -1,0 +1,49 @@
+.landing {
+    position: relative;
+    height: 100vh;
+    background-image: url('/public/images/industry2.jpg'); /* ✅ Your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* 💥 Parallax effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 3rem;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .overlay h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .overlay button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: white;
+    color: #111;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .overlay button:hover {
+    background-color: #444;
+    color: white;
+  }
+  

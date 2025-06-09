@@ -1,0 +1,31 @@
+.scroll-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem;
+  }
+  
+  .scroll-image {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .scroll-text {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .scroll-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .scroll-text p {
+    font-size: 1.1rem;
+    color: #555;
+  }
