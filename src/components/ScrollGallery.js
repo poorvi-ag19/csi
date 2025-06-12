@@ -1,17 +1,17 @@
-// src/ScrollGallery.js
 import React from 'react';
 import './ScrollGallery.css';
+import 'aos/dist/aos.css';
 
 const data = [
   {
     title: 'Jaduguda’s Silence',
     text: 'Once a thriving village — now reduced to ruins.',
-    image: '/images/pic1.jpg',
+    image: '/images/pic2.jpg',
   },
   {
     title: 'Radiation in the Soil',
     text: 'Contaminated farmlands that can no longer feed.',
-    image: '/images/pic2.jpg',
+    image: '/images/pic1.jpg',
   },
   {
     title: 'The Forgotten Children',
@@ -26,12 +26,12 @@ const data = [
   {
     title: 'Toxic Waters',
     text: 'Rivers that once gave life now carry decay.',
-    image: '/images/pic5.jpg',
+    image: '/images/water2.jpg',
   },
   {
     title: 'The Cost of Power',
     text: 'Progress, measured in suffering.',
-    image: '/images/pic6.jpg',
+    image: '/images/labour.jpg',
   },
   {
     title: 'Still They Rise',
@@ -43,15 +43,19 @@ const data = [
 function ScrollGallery() {
   return (
     <div className="gallery-wrapper">
-      {data.map((item, index) => (
-        <div className="gallery-section" key={index}>
-          <img src={item.image} alt={item.title} />
-          <div className="caption">
-            <h2>{item.title}</h2>
-            <p>{item.text}</p>
+      <div className="horizontal-gallery">
+        {data.map((item, index) => (
+          <div className="gallery-card" key={index} data-aos="fade-up">
+            <div className="parallax-container">
+              <img src={item.image} alt={item.title} className="parallax-img" />
+            </div>
+            <div className="caption">
+              <h2>{item.title}</h2>
+              <p>{item.text}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,13 +1,13 @@
+import 'aos/dist/aos.css';
 import React, { useEffect } from 'react';
 import Landing from './components/landing';
 import ScrollSection from './components/scrollSection';
 import TestimonyCard from './components/TestimonyCard';
 import MapSection from './components/MapSection';
+import ScrollGallery from './components/ScrollGallery';
 import './App.css';
 
-import ScrollGallery from './components/ScrollGallery';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 function App() {
   useEffect(() => {
@@ -18,7 +18,7 @@ function App() {
     <main className="app-container">
       <Landing />
 
-      <section className="content-section">
+      <section className="content-section" data-aos="fade-up">
         <ScrollSection
           title="Contaminated Rivers"
           text="Local communities now suffer from skin disorders and organ damage due to radiation."
@@ -26,22 +26,23 @@ function App() {
         />
       </section>
 
-      <section className="content-section">
+      <section className="content-section" data-aos="fade-left">
         <TestimonyCard
           name="Sita Devi"
           quote="We used to bathe in the river. Now we’re scared to even touch it."
-          image="/images/sita.jpg"
+          image="/images/sita devi.jpg"
         />
       </section>
 
-      <section className="map-section">
+      <section className="map-section" data-aos="fade-up">
         <MapSection />
       </section>
 
-      <div>
-      <Landing />
-      <ScrollGallery />
-    </div>
+      <section className="gallery-section" data-aos="fade-up">
+        <landing/>
+        <ScrollGallery />
+
+      </section>
     </main>
   );
 }

@@ -6,6 +6,7 @@
     background-position: center;
     background-attachment: fixed; /* 💥 Parallax effect */
     display: flex;
+    overflow: auto;
     align-items: center;
     justify-content: center;
     color: white;
