@@ -5,32 +5,32 @@ import './TestimonyScrollSection.css';
 const testimonies = [
   {
     name: 'Ramesh Mahato',
-    quote: 'We used to grow crops here. Now, nothing survives.',
+    quote: '“We used to grow crops here. Now, nothing survives.” The soil, once rich and life-giving, has turned hostile — laced with radioactive remnants that choke roots before they can bloom. What was once a symbol of sustenance is now a quiet graveyard for seeds, hope, and heritage..',
     image: '/images/mine1.jpg'
   },
   {
     name: 'Sunita Devi',
-    quote: 'My children cough all night. No doctor visits us.',
+    quote: 'My children cough all night. No doctor visits us.In Jaduguda’s shadow, children are born into silence and sickness. With no access to care and no one listening, they grow up carrying the invisible weight of a poisoned land.',
     image: '/images/mine2.jpg'
   },
   {
     name: 'Lakhan Bhuiyan',
-    quote: 'Once a land of water — now only poison flows.',
+    quote: 'Once a land of flowing life, now a stream of slow death — the waters, once sacred, now carry only sorrow and sickness.',
     image: '/images/mine3.jpg'
   },
   {
     name: 'Kamla Kumari',
-    quote: 'The mines took our jobs, homes and peace.',
+    quote: 'We once grew crops to feed our families — now, even weeds refuse to grow.The mines didn’t just take the land — they stripped away our work, our homes, and any sense of peace we had left.',
     image: '/images/mine4.jpg'
   },
   {
     name: 'Anil Oraon',
-    quote: 'Every day we wake to dust and disease.',
+    quote: 'Every day begins with the same choking dust and creeping illness.What was once home has become a slow, silent battlefield.',
     image: '/images/mine5.png'
   },
   {
     name: 'Gita Soren',
-    quote: 'Even the animals have fled this place.',
+    quote: 'Even the animals no longer roam like before — their cries have faded. Where life once thrived, now silence and sickness spread.',
     image: '/images/mine6.jpg'
   }
 ];

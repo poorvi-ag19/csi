@@ -5,37 +5,37 @@ import 'aos/dist/aos.css';
 const galleryData = [
   {
     title: 'Jaduguda’s Silence',
-    description: 'Once a thriving village — now reduced to ruins.',
+    description: 'Once alive with laughter, tradition, and the rhythm of rural life, Jaduguda now stands in eerie stillness. The hum of geiger counters has replaced the chatter of children, and cracked walls echo stories of loss. Beneath this silence lies a haunting truth — a village sacrificed in the name of progress.',
     image: '/images/pic2.jpg',
   },
   {
     title: 'Radiation in the Soil',
-    description: 'Contaminated farmlands that can no longer feed.',
-    image: '/images/pic1.jpg',
+    description: 'The land that once nourished generations now breeds only fear. Beneath the surface, radiation seeps deep into the soil, poisoning crops and dreams alike. Farmers watch helplessly as their fields, once fertile, turn barren — a silent tragedy where every harvest is a gamble with life.',
+     image: '/images/pic1.jpg',
   },
   {
     title: 'The Forgotten Children',
-    description: 'Birth defects have become part of the local landscape.',
+    description: 'Children born near the mines suffer from severe birth defects and chronic illnesses — innocent lives shaped by a toxic legacy. Their pain goes unheard, their existence overlooked, as they quietly bear the cost of a disaster they never chose.',
     image: '/images/pic3.jpg',
   },
   {
     title: 'Empty Classrooms',
-    description: 'Where the echo of learning has been replaced by silence.',
+    description: 'Once filled with the laughter and curiosity of young minds, these classrooms now stand abandoned — victims of a community displaced and broken. With families forced to choose survival over schooling, the promise of education fades into silence, leaving behind chalkboards that gather dust and dreams that go unrealized',
     image: '/images/class.jpg',
   },
   {
     title: 'Toxic Waters',
-    description: 'Rivers that once gave life now carry decay.',
+    description: 'The rivers that once sustained entire communities have turned into lifelines of poison. Contaminated by unchecked mining waste, these waters no longer nourish — they infect. Every sip, every bath, every drop is a gamble with illness, turning a symbol of life into a slow, silent threat.',
     image: '/images/water2.jpg',
   },
   {
     title: 'The Cost of Power',
-    description: 'Progress, measured in suffering.',
+    description: 'Beneath the glow of progress lies a trail of unseen suffering. The price paid for nuclear ambition is not just monetary — it is human. Entire communities are sacrificed, their health, homes, and futures compromised, all in the name of national development. This is power, but at what cost?',
     image: '/images/labour.jpg',
   },
   {
     title: 'Still They Rise',
-    description: 'Despite it all, the human spirit endures.',
+    description: 'In the shadow of devastation, resilience takes root. Despite illness, displacement, and neglect, the people refuse to be defined by their suffering. They rise — with strength forged in struggle, voices unbroken, and a will to survive that no fallout can silence.',
     image: '/images/pic7.jpg',
   },
 ];
