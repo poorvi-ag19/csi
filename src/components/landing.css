@@ -1,22 +1,25 @@
 .landing {
-    position: relative;
-    height: 100vh;
-    background-image: url('/public/images/industry2.jpg'); /* ✅ Your image */
+    background-image: url('/public/images/industry2.jpg');
     background-size: cover;
+    background-attachment: fixed; /* PARALLAX */
     background-position: center;
-    background-attachment: fixed; /* 💥 Parallax effect */
+    height: 100vh;
+    position: relative;
     display: flex;
-    overflow: auto;
     align-items: center;
     justify-content: center;
+    text-align: center;
     color: white;
   }
   
   .overlay {
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 3rem;
+    border-radius: 10px;
+    color: white;
     text-align: center;
-    border-radius: 12px;
+    max-width: 700px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
   
   .overlay h1 {
@@ -27,24 +30,21 @@
   .overlay p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
   }
   
   .overlay button {
-    padding: 12px 24px;
-    font-size: 1rem;
-    background-color: white;
+    padding: 0.8rem 1.5rem;
+    background-color: #ffffff;
     color: #111;
+    font-weight: bold;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
   }
   
   .overlay button:hover {
-    background-color: #444;
-    color: white;
+    background-color: #ddd;
+    transform: scale(1.05);
   }
   
