@@ -18,11 +18,7 @@ const galleryData = [
     description: 'Children born near the mines suffer from severe birth defects and chronic illnesses — innocent lives shaped by a toxic legacy. Their pain goes unheard, their existence overlooked, as they quietly bear the cost of a disaster they never chose.',
     image: '/images/pic3.jpg',
   },
-  {
-    title: 'Empty Classrooms',
-    description: 'Once filled with the laughter and curiosity of young minds, these classrooms now stand abandoned — victims of a community displaced and broken. With families forced to choose survival over schooling, the promise of education fades into silence, leaving behind chalkboards that gather dust and dreams that go unrealized',
-    image: '/images/class.jpg',
-  },
+  
   {
     title: 'Toxic Waters',
     description: 'The rivers that once sustained entire communities have turned into lifelines of poison. Contaminated by unchecked mining waste, these waters no longer nourish — they infect. Every sip, every bath, every drop is a gamble with illness, turning a symbol of life into a slow, silent threat.',

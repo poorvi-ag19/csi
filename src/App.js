@@ -2,7 +2,7 @@ import 'aos/dist/aos.css';
 import React, { useEffect } from 'react';
 import Landing from './components/landing';
 import GalleryBlockSection from './components/GalleryBlockSection';
-
+import RotatingImageGallery from './components/RotatingImageGallery';
 import MapSection from './components/MapSection';
 import TestimonyScrollSection from './components/TestimonyScrollSection';
 
@@ -33,6 +33,7 @@ function App() {
 
       <section className="map-section" data-aos="fade-up">
         <MapSection />
+        <RotatingImageGallery />
       </section>
 
       <section className="gallery-section" data-aos="fade-up">
