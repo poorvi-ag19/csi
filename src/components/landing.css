@@ -47,4 +47,15 @@
     background-color: #ddd;
     transform: scale(1.05);
   }
+
+  .developer-credit {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 10;
+  }
+  
   

@@ -48,6 +48,7 @@ function Landing() {
           Begin Story
         </button>
       </div>
+      <div className="developer-credit">Developed by Poorvi Agarwal</div>
     </section>
   );
 }
