@@ -1,49 +1,34 @@
-import React, { useRef, useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import React from 'react';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import './MapSection.css';
+import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+import markerIcon from 'leaflet/dist/images/marker-icon.png';
+import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
-// Fix default marker icon issue in Leaflet + React
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
-  iconUrl: require('leaflet/dist/images/marker-icon.png'),
-  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+
+const customIcon = new L.Icon({
+  iconUrl: markerIcon,
+  iconRetinaUrl: markerIcon2x,
+  shadowUrl: markerShadow,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
 });
 
-// Component to handle zoom animation
-function FlyToLocation({ center }) {
-  const map = useMap();
-
-  useEffect(() => {
-    map.setView(center, 5); // initial center
-    setTimeout(() => {
-      map.flyTo(center, 12, {
-        duration: 2,
-      });
-    }, 1000);
-  }, [map, center]);
-
-  return null;
-}
-
 function MapSection() {
-  const center = [23.7, 86.5]; // Jaduguda Uranium Mines
-
+  const center = [23.7, 86.5];
   return (
     <section className="map-section" data-aos="fade-up">
       <h2>Radiation Hotspots</h2>
-      <MapContainer
-        center={center}
-        zoom={5}
-        style={{ height: '400px', width: '100%' }}
-        scrollWheelZoom={false}
-        zoomControl={true}
-      >
-        <FlyToLocation center={center} />
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        <Marker position={center}>
+      <MapContainer center={center} zoom={8} style={{ height: '400px', width: '100%' }}>
+      <TileLayer
+  url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>'
+/>
+
+        <Marker position={[23.7, 86.5]} icon={customIcon}>
           <Popup>Jaduguda Uranium Mines</Popup>
         </Marker>
       </MapContainer>
@@ -52,3 +37,4 @@ function MapSection() {
 }
 
 export default MapSection;
+
