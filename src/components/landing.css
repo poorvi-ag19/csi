@@ -58,4 +58,41 @@
     z-index: 10;
   }
   
+  .landing-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Push it to the right edge */
+    z-index: 10;
+    text-align: right;
+  }
+  
+  .landing-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: flex-end;
+  }
+  
+  .landing-nav li {
+    margin: 0;
+  }
+  
+  .landing-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .landing-nav a:hover {
+    color: #00ffff;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
   

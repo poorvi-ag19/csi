@@ -20,19 +20,30 @@ const customIcon = new L.Icon({
 function MapSection() {
   const center = [23.7, 86.5];
   return (
-    <section className="map-section" data-aos="fade-up">
-      <h2>Radiation Hotspots</h2>
-      <MapContainer center={center} zoom={8} style={{ height: '400px', width: '100%' }}>
+    <section id="map" className="map-section" data-aos="fade-up">
+  <h2>Radiation Hotspots</h2>
+  <div className="map-container-wrapper">
+    <MapContainer center={center} zoom={8} style={{ height: '400px', width: '100%' }} scrollWheelZoom={false}>
       <TileLayer
-  url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
-  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>'
-/>
+        url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+        attribution='&copy; OpenStreetMap contributors & CARTO'
+      />
+      <Marker position={[23.7, 86.5]} icon={customIcon}>
+        <Popup>Jaduguda Uranium Mines</Popup>
+      </Marker>
+    </MapContainer>
 
-        <Marker position={[23.7, 86.5]} icon={customIcon}>
-          <Popup>Jaduguda Uranium Mines</Popup>
-        </Marker>
-      </MapContainer>
-    </section>
+    <div className="floating-info-box">
+      <h3>Jaduguda Uranium Mines</h3>
+      <p><strong>Latitude:</strong> 23.7° N</p>
+      <p><strong>Longitude:</strong> 86.5° E</p>
+      <p>
+        One of India's oldest uranium mines, nestled in the forests of Jharkhand. Once a promise of energy—now a region battling radiation’s unseen toll.
+      </p>
+    </div>
+  </div>
+</section>
+
   );
 }
 

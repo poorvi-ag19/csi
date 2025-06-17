@@ -5,7 +5,7 @@ import './TestimonyScrollSection.css';
 const testimonies = [
   {
     name: 'Ramesh Mahato',
-    quote: 'We used to grow crops here. Now, nothing survives. The soil, once rich and life-giving, has turned hostile — laced with radioactive remnants that choke roots before they can bloom. What was once a symbol of sustenance is now a graveyard for hope, and heritage..',
+    quote: 'We used to grow crops here. Now, nothing survives. The soil, once life-giving, has turned hostile, laced with radioactive remnants that choke roots before they can bloom. What was once a symbol of sustenance is now a graveyard for hope,and heritage.',
     image: '/images/mine1.jpg'
   },
   {
@@ -37,6 +37,7 @@ const testimonies = [
 
 function TestimonyScrollSection() {
     return (
+      <section id="testimony">
       <div className="testimony-scroll-section">
         <div className="testimony-scroll-container">
           <div className="testimony-scroll-wrapper">
@@ -50,6 +51,7 @@ function TestimonyScrollSection() {
           </div>
         </div>
       </div>
+      </section>
     );
   }
   

@@ -1,7 +1,7 @@
 .rotating-gallery-wrapper {
     overflow: hidden;
-    background-color: #111; /* dark background */
-    padding: 2em 0;
+    background-color: #111111; /* dark background */
+    padding: 0;
   }
   
   .rotating-gallery {

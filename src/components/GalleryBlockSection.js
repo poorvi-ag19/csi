@@ -38,6 +38,7 @@ const galleryData = [
 
 function GalleryBlockSection() {
   return (
+    <section id="gallery">
     <div className="gallery-block-wrapper">
       {galleryData.map((item, index) => (
         <div
@@ -53,6 +54,7 @@ function GalleryBlockSection() {
         </div>
       ))}
     </div>
+    </section>
   );
 }
 
