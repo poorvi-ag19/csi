@@ -39,7 +39,7 @@
   
   .testimony-scroll-card img {
     width: 100%;
-    height: 220px;
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 1rem;
@@ -63,6 +63,46 @@
   @keyframes scroll-left {
     0% { transform: translateX(0); }
     100% { transform: translateX(-35%); }
+  }
+
+  @media (max-width: 768px) {
+    .testimony-scroll-wrapper {
+      gap: 1rem;
+      animation: scroll-left 30s linear infinite;
+    }
+  
+    .testimony-scroll-card {
+      flex: 0 0 220px;
+      height: 370px;
+      padding: 0.75rem;
+    }
+  
+    .testimony-scroll-card img {
+      height: 160px;
+    }
+  
+    .testimony-scroll-card h3 {
+      font-size: 1rem;
+    }
+  
+    .testimony-scroll-card p {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testimony-scroll-card {
+      flex: 0 0 180px;
+      height: 340px;
+    }
+  
+    .testimony-scroll-card img {
+      height: 140px;
+    }
+  
+    .testimony-scroll-card p {
+      font-size: 0.8rem;
+    }
   }
   
   
