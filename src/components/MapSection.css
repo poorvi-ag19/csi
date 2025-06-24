@@ -1,7 +1,7 @@
 .map-section {
-    padding: 1rem 1rem;
+    padding: 2rem 1rem;
     background: #002147;
-    color: white;
+    color: rgb(251, 244, 244);
   }
   
   .map-section h2 {
@@ -53,7 +53,7 @@
     color: #f0f0f0;
   }
   
-  /* ✅ Mobile Responsive */
+ 
   @media (max-width: 768px) {
     .map-container-wrapper {
       flex-direction: column;
