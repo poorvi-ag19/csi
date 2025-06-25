@@ -5,17 +5,17 @@ import 'aos/dist/aos.css';
 const galleryData = [
   {
     title: 'Jaduguda’s Silence',
-    description: 'Once alive with laughter, tradition, and the rhythm of rural life, Jaduguda now stands in eerie stillness. The hum of geiger counters has replaced the chatter of children, and cracked walls echo stories of loss. Beneath this silence lies a haunting truth — a village sacrificed in the name of progress.',
+    description: "Jaduguda was once like any other village — full of chatter, festivals, and quiet routines. Today, things feel different. The sounds have faded, and so have the crowds. What remains is a strange calm, shaped by years of change. Somewhere between progress and pause, the village carries a story few notice — but one that still quietly matters.",
     image: '/images/pic2.jpg',
   },
   {
     title: 'Radiation in the Soil',
-    description: 'The land that once nourished generations now breeds only fear. Beneath the surface, radiation seeps deep into the soil, poisoning crops and dreams alike. Farmers watch helplessly as their fields, once fertile, turn barren — a silent tragedy where every harvest is a gamble with life.',
+    description: 'The land that once sustained entire communities now shows signs of decline. Radiation has compromised the soil, leaving many fields infertile and livelihoods uncertain. Farmers face growing challenges as traditional farming becomes increasingly difficult, with each season marked by declining yields and rising concern.',
      image: '/images/pic1.jpg',
   },
   {
     title: 'The Forgotten Children',
-    description: 'Children born near the mines suffer from severe birth defects and chronic illnesses — innocent lives shaped by a toxic legacy. Their pain goes unheard, their existence overlooked, as they quietly bear the cost of a disaster they never chose.',
+    description: 'In communities surrounding the mines, reports have noted a higher incidence of birth defects and chronic health conditions among children. These patterns are often associated with prolonged environmental exposure and limited access to healthcare services..',
     image: '/images/pic3.jpg',
   },
   
@@ -26,12 +26,12 @@ const galleryData = [
   },
   {
     title: 'The Cost of Power',
-    description: 'Beneath the glow of progress lies a trail of unseen suffering. The price paid for nuclear ambition is not just monetary — it is human. Entire communities are sacrificed, their health, homes, and futures compromised, all in the name of national development. This is power, but at what cost?',
+    description: 'Behind the advancement of nuclear infrastructure lie communities affected by displacement, health concerns, and environmental degradation. The pursuit of national development often comes with trade-offs — ones that impact everyday lives in ways not always seen or acknowledged.',
     image: '/images/labour.jpg',
   },
   {
     title: 'Still They Rise',
-    description: 'In the shadow of devastation, resilience takes root. Despite illness, displacement, and neglect, the people refuse to be defined by their suffering. They rise — with strength forged in struggle, voices unbroken, and a will to survive that no fallout can silence.',
+    description: 'In the aftermath of disruption, communities continue to endure. Despite facing health challenges, relocation, and limited support, many individuals persist with quiet strength and determination — navigating daily life with dignity and resolve.',
     image: '/images/pic7.jpg',
   },
 ];

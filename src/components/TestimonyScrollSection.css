@@ -30,12 +30,17 @@
     padding: 1.5rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
-    height: 450px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     transition: transform 0.4s ease;
+    overflow: hidden;
+    min-height: 450px;
   }
+  
+  .testimony-scroll-card.expanded {
+    min-height: auto; /* allows card to grow with content */
+  }
+  
   
   .testimony-scroll-card img {
     width: 100%;
@@ -89,6 +94,23 @@
       font-size: 0.875rem;
     }
   }
+
+  .read-more-btn {
+    background: none;
+    border: none;
+    color: #71f0f0;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin-top: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    color: #ffffff;
+  }
+  
+  
   
   @media (max-width: 480px) {
     .testimony-scroll-card {
