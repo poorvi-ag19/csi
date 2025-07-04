@@ -77,7 +77,7 @@
   
     .gallery-block-text {
       width: 100%;
-      padding: 1rem 1rem; /* Ensure left and right padding */
+      padding: 1rem 1rem; 
       text-align: center;
       word-break: break-word;
     }
